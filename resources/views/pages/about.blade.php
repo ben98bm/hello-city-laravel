@@ -13,9 +13,6 @@
        <p>Built with &hearts; by les teacher.</p>
 
        <p><a href="/">Revenir a la page</a></p>
-
-       <footer>
-           <p>&copy; Copyrights {{ date('Y') }} &middot; <a href="/about-us">About us</a></p>
-       </footer>
+     
     </body>
 </html>

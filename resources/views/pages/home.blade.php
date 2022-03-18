@@ -1,7 +1,5 @@
 @extends('base')
 
-<!-- @section('title', 'Hello City') -->
-
 
 @section('content')
     <h1>Hello from senegal</h1>

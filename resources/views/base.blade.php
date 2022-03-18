@@ -4,16 +4,23 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>@yield('title', 'contenu par defaut')</title>
+        <title>@yield('title', config('app.name'))</title>
 
        
 
     </head>
     <body>
       @yield('content')
-        
+
+      {{config('project.slogan')}}
+
        <footer>
-           <p>&copy; Copyrights {{ date('Y') }} &middot; <a href="/about-us">About us</a></p>
+           <p>
+                &copy; Copyrights {{ date('Y') }} 
+                @if(! Route::is('about'))
+                &middot; <a href="{{ route('about')}}">About us</a>
+                @endif             
+            </p>
        </footer>
     </body>
 </html>

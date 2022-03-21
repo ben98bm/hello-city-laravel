@@ -3,8 +3,8 @@
 
 @section('content')
 
-    <img src="/images/patrouille.jpg" alt="images">
-    <h1>Hello from senegal</h1>
+    <img src="/images/IMG_2475.jpg" alt="images" class="rounded shadow-md h-32">
+    <h1 class="mt-5 text-3xl sm:text-5xl text-indigo-600">Hello from senegal</h1>
 
-    <p>Il est actuellement {{ date('h:i A')}}.</p>
+    <p class="text-lg text-red-800">Il est actuellement {{ date('h:i A')}}.</p>
 @endsection
